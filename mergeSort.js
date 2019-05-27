@@ -19,7 +19,7 @@ function merge(arr1, arr2) {
     sortedArray.push(arr2[arr2Index]);
     arr2Index++;
   }
-  console.log(sortedArray);
+  //console.log(sortedArray);
   return sortedArray;
 }
 
@@ -28,7 +28,7 @@ function mergeSort(arr) {
   let mid = Math.floor(arr.length / 2);
   let left = mergeSort(arr.slice(0, mid));
   let right = mergeSort(arr.slice(mid));
-  console.log(left, right);
+  //console.log(left, right);
   return merge(left, right);
 }
 
